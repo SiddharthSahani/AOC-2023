@@ -16,8 +16,6 @@ for k, v in digits_map.items():
 sum_vals = 0
 
 for line in file_contents.splitlines():
-    first = -1
-    last = -1
 
     for char in line:
         if char.isdigit():

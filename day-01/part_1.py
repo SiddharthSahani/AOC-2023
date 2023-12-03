@@ -6,9 +6,6 @@ file_contents = file.read()
 sum_vals = 0
 
 for line in file_contents.splitlines():
-    first = -1
-    last = -1
-
     for char in line:
         if char.isdigit():
             first = int(char)
