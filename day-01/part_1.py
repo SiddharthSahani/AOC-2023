@@ -19,5 +19,4 @@ for line in file_contents.splitlines():
     num = first * 10 + last
     sum_vals += num
 
-
 print(sum_vals)

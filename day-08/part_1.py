@@ -5,7 +5,6 @@ file_contents = file.read()
 
 seq, nodes = file_contents.split('\n\n')
 lr_nodes = {}
-N = len(nodes)
 
 
 for id, line in enumerate(nodes.splitlines()):

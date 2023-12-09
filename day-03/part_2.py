@@ -22,7 +22,7 @@ gears_map = {}
 for sym in symbols:
     gears_map[sym] = set()
     sym_pos = sym.span()[0]
-    
+
     for offset in adjacent_offsets:
         p = sym_pos + offset
         if p < 0 or p > len(file_contents):
@@ -34,6 +34,7 @@ for sym in symbols:
 
 
 sum_gears = 0
+
 for sym in symbols:
     l = list(gears_map[sym])
     if len(l) == 2:

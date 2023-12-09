@@ -21,7 +21,7 @@ adding_num_set = set()
 
 for sym in symbols:
     sym_pos = sym.span()[0]
-    
+
     for offset in adjacent_offsets:
         p = sym_pos + offset
         if p < 0 or p > len(file_contents):
@@ -33,6 +33,7 @@ for sym in symbols:
 
 
 sum_nums = 0
+
 for num_match in adding_num_set:
     sum_nums += int(num_match.group())
 

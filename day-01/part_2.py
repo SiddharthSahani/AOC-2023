@@ -8,7 +8,6 @@ digits_map = {
     digits[i]: f"{digits[i]}{i+1}{digits[i]}" for i in range(9)
 }
 
-
 for k, v in digits_map.items():
     file_contents = file_contents.replace(k, v)
 
@@ -29,6 +28,5 @@ for line in file_contents.splitlines():
 
     num = first * 10 + last
     sum_vals += num
-
 
 print(sum_vals)

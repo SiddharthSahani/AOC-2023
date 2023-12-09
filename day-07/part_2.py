@@ -35,6 +35,7 @@ c_to_pow_map = [
     'A', 'K', 'Q', 'T', '9', '8', '7', '6', '5', '4', '3', '2', 'J'
 ]
 c_to_pow_map.reverse()
+
 def get_power_list(hand):
     type = get_hand_type(hand)
     l = [type]

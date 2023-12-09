@@ -3,8 +3,6 @@ file = open("day-06/inputs/part_2.txt", 'r')
 file_contents = file.read()
 
 lines = file_contents.splitlines()
-
-
 time = int(''.join(lines[0].split()[1:]))
 distance = int(''.join(lines[1].split()[1:]))
 
@@ -18,6 +16,5 @@ for t in range(time):
     else:
         if num_ways != 0:
             break
-
 
 print(num_ways)
